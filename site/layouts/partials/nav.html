@@ -5,15 +5,40 @@
 		<img src="/img/logo.png" alt="Kaldi logo" class="br0 db mb0 w-100"/>
 	</a>
 
-	<!-- Primary Nav -->
-	<ul class="flex b grey-3">
-		<li><a href="/products" class="pa3 no-underline db">Products</a></li>
+	<a href="#main-menu"
+     role="button"
+     id="main-menu-toggle"
+     class="menu-toggle"
+     aria-expanded="false"
+     aria-controls="main-menu"
+     aria-label="Open main menu">
 
-		<li><a href="/values" class="pa3 no-underline db">Values</a></li>
+    <span class="sr-only">Open main menu</span>
+    <span class="fa fa-bars" aria-hidden="true"></span>
+  </a>
 
-		<li><a href="/post" class="pa3 no-underline db">Blog</a></li>
+  <nav id="main-menu" role="navigation" class="main-menu" aria-expanded="false" aria-label="Main menu">
+    <a href="#main-menu-toggle"
+       role="button"
+       id="main-menu-close"
+       class="menu-close"
+       aria-expanded="false"
+       aria-controls="main-menu"
+       aria-label="Close main menu">
 
-		<li><a href="/contact" class="pa3 no-underline db">Contact</a></li>
-	</ul>
+      <span class="sr-only">Close main menu</span>
+      <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul class="">
+			<li><a href="/products" class="">Products</a></li>
+			<li><a href="/values" class="">Values</a></li>
+			<li><a href="/post" class="">Blog</a></li>
+			<li><a href="/contact" class="">Contact</a></li>
+    </ul>
+  </nav>
+  <a href="#main-menu-toggle"
+     class="backdrop"
+     tabindex="-1"
+     aria-hidden="true" hidden></a>
 
 </nav>
